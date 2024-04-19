@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e1350d98a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hạ Long</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <div class="header-top">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li style="--x:1;"><a href="#">Trang chủ</a></li>
+                <li style="--x:2;"><a href="#dia-diem-noi-bat">Địa điểm nổi bật</a></li>
+                <li style="--x:3;"><a href="#ve-chung-toi">Về chúng tôi</a></li>
+                <li style="--x:4;"><a href="#tour-he-2024">Tour hè 2024</a></li>
+                <li style="--x:5;"><a href="#dia-diem-an-uong">Địa điểm ăn uống</a></li>
+                <li style="--x:6;"><a href="#contact-us">Liên hệ</a></li>
+                <li style="--x:7;"><a href="#">Phản hồi</a></li>
+            </ul>
+        </div>
+        <div class="video-container">
+            <video src="videos/HạLong.mp4" autoplay muted loop></video>
+        </div>
+        <div class="header-content">
+            <h1 class="style">Khám phá</h1>
+            <p>Xách ba lô lên và đi thôi nào</p>
+            <form action="">
+                <h1>Bạn muốn đi đâu hè này</h1>
+                <p>Địa điểm</p>
+                <select name="" id="Location">
+                    <option value="#">--Chọn địa điểm--</option>
+                    <option value="#">Đỉnh Phượng Hoàng</option>
+                    <option value="#">Hạ Long</option>
+                    <option value="#">Biển Trà cổ</option>
+                </select>
+                <p>Số người</p>
+                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người" id="Location0">
+                <p>Ngày đi</p>
+                <input type="date" id="Location1">
+                <p>Ngày về</p>
+                <input type="date" id="Location2">
+                <button id="Search">Tìm kiếm</button>
+            </form>
+        </div>
+    </header>
+    <hr>
+    <!---------------------NICE-PLACE--------------- -->
+    <section class="nice-place" id="dia-diem-noi-bat">
+        <div class="container">
+            <h1 class="h1-style">Địa điểm nổi bật</h1>
+            <div class="nice-place-content row">
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="img/dinhphuonghoang.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2> Tour Đỉnh Phượng Hoàng </h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>Đỉnh Phượng Hoàng tại Uông Bí, QN là
+                            1 trong những điểm đến gây sốt với giới trẻ trong khoảng tgian gần đây.
+                        </p>
+                        <button class="btn"> Tham khảo </button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="img/Vinh-Ha-Long-1 (1).jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2> Vịnh Hạ Long </h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>Là một vịnh nhỏ thuộc phần bờ tây vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam, bao gồm
+                            vùng biển
+                            đảo của
+                            thành phố Hạ Long thuộc tỉnh Quảng Ninh.</p>
+                        <button class="btn"> Tham khảo </button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="img/traco.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2> Biển Trà Cổ </h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p>Một trong những đường bờ biển đẹp nhất Quảng Ninh với chiều dài lên đến 15km.</p>
+                        <button class="btn"> Tham khảo </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!------------------About------------ -->
+    <section class="about" id="ve-chung-toi">
+        <div class="container">
+            <h1 class="h1-style">Về chúng tôi</h1>
+            <div class="about-content row">
+                <div class="about-content-left">
+                    <img src="img/about.png" alt="">
+                </div>
+                <div class="about-content-right">
+                    <h2>Tại sao bạn nên chọn chúng tôi?</h2>
+                    <p> Chúng tôi là công ty hàng đầu về cung cấp dịch vụ lữ hành nội địa tuyệt vời.</p>
+                </div>
+            </div>
+            <div class="service row">
+                <div class="service-item">
+                    <img src="img/hotel.png.png" alt="">
+                    <p>Khách Sạn</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/điện thoại.png" alt="">
+                    <p>Liên hệ</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/nhà hàng.png" alt="">
+                    <p>Nhà hàng</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!------ -------------------------Tour 2024----------->
+    <section class="tour" id="tour-he-2024">
+        <div class="container">
+            <h1 class="h1-style">Tour hè 2024</h1>
+            <div class="tour content row">
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="img/Coto-2.png" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Cô Tô</h2>
+                        <p>Cô Tô có đến gần 50 đảo lớn nhỏ xung quanh, trong khu vực đảo Cô Tô lớn và Cô Tô con rất phát
+                            triển về du lịch.
+                            Diện tích 47,3km^2, cảnh quan hoang sơ tư nhiên cùng nhiều địa danh tham quan, du lịch nổi
+                            tiếng
+                        </p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour content row">
+                    <div class="tour-content-item row">
+                        <div class="tour-content-item-img">
+                            <img src="img/yentu 2.jpg" alt="">
+                        </div>
+                        <div class="tour-content-item-text">
+                            <h2>Khu du lịch Yên Tử</h2>
+                            <p>Là nơi lưu giữ các di tích lịch sử, văn hoá gắn liền với sự hình thành và phát triển của
+                                thiền phái Trúc Lâm Yên Tử.
+                                Tốt nhất là vào mùa xuân, khoảng từ tháng 1 đến tháng 3 âm lịch, thời tiết khi ấy mát
+                                mẻ, dễ chịu. Cũng là lúc thu hút đông đảo người tứ phương đến tham quan, lễ Phật.
+                            </p>
+                            <button class="btn">Khám phá</button>
+                        </div>
+                    </div>
+                    <div class="tour content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="img/dinhphuonghoang2.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Đỉnh phượng hoàng</h2>
+                                <p>Là địa điểm du lịch nằm tại bản 12 khe, Bắc Sơn, Uông Bí. Nằm cách trung tâm khoảng
+                                    40km
+                                    Đối lập với sự ồn ào, vồn vã của thành phố Uông Bí, nơi đây giống như là một “toạ
+                                    độ” yên bình và thơ mộng. Giống như một câu chuyện cổ tích về một làng quê cách biệt
+                                    được bao phủ bởi núi đồi rộng lớn, bao la.
+                                </p>
+                                <button class="btn">Khám phá</button>
+                            </div>
+                        </div>
+                        <div class="tour content row">
+                            <div class="tour-content-item row">
+                                <div class="tour-content-item-img">
+                                    <img src="img/biencampha2.jpeg" alt="">
+                                </div>
+                                <div class="tour-content-item-text">
+                                    <h2>Biển cẩm phả</h2>
+                                    <p>Nơi đây thu hút du khách bởi vẻ đẹp nên thơ, hùng vĩ của núi rừng. Cùng với vẻ
+                                        đẹp non nước hữu tình, Cẩm Phả còn nổi tiếng với những đặc sản làm say mê bao du
+                                        khách.
+                                    </p>
+                                    <button class="btn">Khám phá</button>
+                                </div>
+                            </div>
+                            <div class="tour content row">
+                                <div class="tour-content-item row">
+                                    <div class="tour-content-item-img">
+                                        <img src="img/baichay2.jpg" alt="">
+                                    </div>
+                                    <div class="tour-content-item-text">
+                                        <h2>Bãi Cháy</h2>
+                                        <p>Từ tháng 4 đến tháng 9 là thời gian đẹp nhất để đi tham quan Bãi Cháy Quảng
+                                            Ninh với trời nắng nhẹ, bãi cát trắng và biển trong xanh.
+                                        </p>
+                                        <button class="btn">Khám phá</button>
+                                    </div>
+                                </div>
+                                <div class="tour content row">
+                                    <div class="tour-content-item row">
+                                        <div class="tour-content-item-img">
+                                            <img src="img/hoyentrung2.jpg" alt="">
+                                        </div>
+                                        <div class="tour-content-item-text">
+                                            <h2>Hồ Yên Trung</h2>
+                                            <p>Đây là hồ nước ngọt lớn nhất của tỉnh Quảng Ninh với tổng diện tích lên
+                                                tới 100ha. Với vai trò như một chiếc điều hòa chạy bằng nước.
+                                            </p>
+                                            <button class="btn">Khám phá</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!------------------------Restaurant--------->
+    <section class="Restaurant" id="dia-diem-an-uong">
+        <div class="container">
+            <h1 class="h1-style">Địa điểm ăn uống </h1>
+            <div class="Restaurant row">
+                <div class="Restaurant-places row">
+                    <div class="Restaurant-places-img">
+                        <img src="img/nhà hàng vjpro.jpg" alt="">
+                    </div>
+                    <div class="Restaurant-places-img-text">
+                        <h2>Vinpearl Hạ Long</h2>
+                        <p>Vinpearl Hạ Long tọa lạc tại Đảo Rều, Bãi Cháy, thuộc quần thể Vịnh Hạ Long. Khách sạn Đảo
+                            rều Quảng Ninh ẩn chứa vẻ đẹp thiên nhiên non nước hữu tình tựa như tranh vẽ. Kiến trúc
+                            thiết kế được lấy cảm hứng từ Nhà hát Rennes nổi tiếng của nước Pháp hoa lệ. Năm 2018, Tổng
+                            cục du lịch Việt Nam đã trao giải ."Khách sạn hàng đầu Việt Nam” cho Vinpearl Quảng Ninh</p>
+                        <button class="btn">Trải nghiệm</button>
+                    </div>
+                </div>
+                <div class="Restaurant-places row">
+                    <div class="Restaurant-places-img">
+                        <img src="img/đjt me cuoc doi.jpg" alt="">
+                    </div>
+                    <div class="Restaurant-places-img-text">
+                        <h2>Nhà hàng Pavilion</h2>
+                        <p>Tọa lạc ngay trong chính khuôn viên của khách sạn Vinpearl Resort & Spa Hạ Long, nhà hàng
+                            Quảng Ninh Pavilion sở hữu kiến trúc độc đáo kiểu nhà chòi nằm hoàn toàn trên mặt biển. Khi
+                            đến với nhà hàng Pavilion của Vinpearl Hạ Long, du khách sẽ được thưởng thức đa dạng các món
+                            ẩm thực tươi ngon, cực kỳ hấp dẫn mang đậm hương vị biển cả Quảng Ninh.</p>
+                        <button class="btn">Trải nghiệm</button>
+                    </div>
+                </div>
+                <div class="Restaurant-places row">
+                    <div class="Restaurant-places-img">
+                        <img src="img/abcdxyz.jpg" alt="">
+                    </div>
+                    <div class="Restaurant-places-img-text">
+                        <h2>Bayview - Nhà hàng Hạ Long nổi tiếng trên mặt biển</h2>
+                        <p>Nếu như nhà hàng Pavilion của khách sạn Vinpearl Resort & Spa Hạ Long mang hơi hướng truyền
+                            thống văn hóa Việt, thì khi đến với Bayview thực khách sẽ được trải nghiệm một phong cách ẩm
+                            thực hoàn toàn khác biệt. Tại nhà hàng Bayview, du khách sẽ được chiêm ngưỡng toàn cảnh vịnh
+                            Hạ Long kỳ quan, thưởng thức các món ẩm thực tinh túy trên khắp thế giới.</p>
+                        <button class="btn">Trải nghiệm</button>
+                    </div>
+                </div>
+                <div class="Restaurant-places row">
+                    <div class="Restaurant-places-img">
+                        <img src="img/lmaolmao.jpg" alt="">
+                    </div>
+                    <div class="Restaurant-places-img-text">
+                        <h2>Nhà hàng Akoya </h2>
+                        <p>Nếu bạn đang tìm kiếm một địa chỉ nhà hàng Quảng Ninh với thực đơn đa dạng các món ăn từ Á
+                            sang Âu, không gian nhà hàng hiện đại sang trọng, thì chắc chắn nhà hàng Akoya tại Vinpearl
+                            Resort & Spa Hạ Long sẽ là một gợi ý vô cùng hoàn hảo. Tới đây, bạn sẽ được trải nghiệm
+                            những món ăn Việt Nam, Châu Âu với loại hình buffet và chọn món. </p>
+                        <button class="btn">Trải nghiệm</button>
+                    </div>
+                </div>
+                <div class="Restaurant-places row">
+                    <div class="Restaurant-places-img">
+                        <img src="img/đẹp vl.jpg" alt="">
+                    </div>
+                    <div class="Restaurant-places-img-text">
+                        <h2>Nhà hàng Phương Nam Quảng Ninh</h2>
+                        <p>Tọa lạc trên con đường Đỗ Sĩ Họa với mặt tiền hướng vịnh biển tuyệt đẹp. Đến với nhà hàng
+                            Quảng Ninh này, thực khách sẽ được trải nghiệm các món ăn từ hải sản có giá thành khá phải
+                            chăng như: tôm, bề bề, cua biển, lẩu, nướng,... Ngoài ẩm thực biển, nhà hàng Quảng Ninh
+                            Phương Nam còn có menu phục vụ các món ăn 3 miền, đặc sản vùng cao</p>
+                        <button class="btn">Trải nghiệm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------lienhe----------->
+        <button class="open-button" onclick="openForm()">Liên hệ tư vấn</button>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h2>Thông tin của bạn</h2>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Nhập email" name="email" required>
+                <label for="tel"><b>Điện thoại</b></label>
+                <input type="tel" placeholder="Nhập số điện thoại" name="num" required>
+                <label for="address"><b>Địa chỉ</b></label>
+                <select id="city" name="city">
+                    <option value="Đỉnh phượng hoàng">Đỉnh Phượng Hoàng</option>
+                    <option value="Hạ Long">Hạ Long</option>
+                    <option value="Biển Trà Cổ">Biển Trà Cổ</option>
+                </select>
+                <button type="submit" class="btn">Gửi</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Đóng</button>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <!-----------------------Thông tin liên hệ-------------->
+    <section class="Thông tin liên hệ" id="contact-us">
+        <h2>Contact Us</h2>
+        <div class="icon-container">
+            <a href="https://www.facebook.com/profile.php?id=100022580229363" class="fab">
+                <i class="fab fa-facebook" style="float: left;"></i></a>
+            <span style="float: right;" id="span1">Quang Trung</span>
+            <div class="icon-container">
+                <a href="https://www.instagram.com/hyangkangg/" class="instagram-icon">
+                    <i class="fa-brands fa-instagram" style="float: left;"></i></a>
+                <span id="span2">Yangz</span>
+                <div class="icon-container">
+                    <i class="fa-solid fa-phone" style="float: left;" id="dienthoai"></i>
+                    <span id="span3">0388130753</span>
+                    <p id="sua">Sữa</p>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Quảng Ninh - Điểm Đến Đẹp</p>
+            <p>&copy;Copyright © 2024 All rights reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

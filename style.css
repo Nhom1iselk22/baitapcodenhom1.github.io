@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #6dbfe2;
+    --subtext: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    position: relative;
+}
+
+.header-top i {
+    position: fixed;
+    margin: 12px;
+    font-size: 35px;
+    color: var(--main-color);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.header-top ul {
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100px;
+    padding: 150px 0 0 50px;
+    display: none;
+    opacity: 0;
+    z-index: 1;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.header-top ul.active {
+    display: block;
+    opacity: 1;
+}
+
+.header-top ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: fade 0.3s linear backwards;
+    animation-delay: calc(0.3s * var(--x));
+}
+
+@keyframes fade {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+
+.header-top ul li a {
+    display: block;
+    background-color: var(--main-color);
+    padding: 12px;
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #fff;
+}
+
+.header-top ul li a:hover {
+    color: red;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255, 0.1);
+    padding: 150px 50px 0 50px;
+    text-align: center;
+    width: 400px;
+}
+
+.header-content>h1 {
+    color: #fff;
+}
+
+.header-content>p {
+    color: #fff;
+}
+
+form {
+    padding: 30px 12px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+form h1 {
+    color: #333;
+    font-size: 27px;
+}
+
+form select.input {
+    width: 100%;
+    height: 35px;
+    padding-left: 12px;
+    outline: none;
+    background-color: #dddd;
+    border: none;
+}
+
+form p {
+    text-align: left;
+    color: var(--main-color);
+    margin: 8px 0 3px;
+}
+
+form button {
+    height: 35px;
+    width: 150px;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+
+}
+
+form button:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+/*----------------NIce-Place----------*/
+.nice-play {
+    padding: 100px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.btn {
+    height: 30px;
+    width: 100px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: tomato;
+}
+
+.h1-style {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--main-color);
+    position: relative;
+}
+
+.h1-style::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h1-style::after {
+    position: absolute;
+    content: "\2665";
+    width: 40px;
+    height: 10px;
+    color: red;
+    background-color: #fff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*--------------------------NICE place-------------------------------------- */
+.nice-place-item {
+    width: 30%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.nice-place-item:hover .nice-place-text {
+    transform: translateX(0%);
+}
+
+.nice-place-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.nice-place-text {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    padding: 12px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+.nice-place-text h2 {
+    color: var(--main-color);
+}
+
+.nice-place-text i {
+    color: yellow;
+}
+
+.nice-place-text p {
+    color: #fff;
+    margin: 12px 0;
+}
+
+
+
+
+
+/*-------------------About---------------- */
+.about {
+    padding: 100px 0;
+}
+
+.about-content-left {
+    width: 50%;
+}
+
+.about-content-left img {
+    width: 100%;
+}
+
+.about-content-right {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.about-content-right h2 {
+    font-family: var(--subtext);
+    font-weight: normal;
+    color: var(--main-color);
+}
+
+.about-content-right p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--subtext);
+}
+
+.service {
+    margin-top: 20px;
+
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #b9dae8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.service-item img {
+    width: 150px;
+    margin-bottom: 6px;
+
+}
+
+/*---------------------------------Tour----------------------------------*/
+.tour {
+    padding: 100px 0;
+}
+
+.tour-content-item {
+    display: flex;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+}
+
+.tour-content-item-img {
+    width: 50%;
+    height: 300px;
+}
+
+.tour-content-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0, 3s ease;
+}
+
+.tour-content-item-text {
+    width: 50%;
+    padding: 20px 0 0 50px;
+}
+
+.tour-content-item-text h2 {
+    font-family: var(--subtext);
+    font-weight: normal;
+    color: var(--main-color);
+}
+
+.tour-content-item-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--subtext);
+}
+
+.tour-content-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.tour-content-item:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#Location {
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+#Location0 {
+    position: relative;
+    bottom: 20px;
+    left: 16px;
+}
+
+#Location1 {
+    position: relative;
+    bottom: 20px;
+}
+
+#Location2 {
+    position: relative;
+    bottom: 45px;
+    left: 75px;
+}
+
+#Search {
+    position: relative;
+    right: 80px;
+}
+
+/*--------------------Restaurant----------*/
+.Restaurant {
+    padding: 100px 0;
+}
+
+.Restaurant-places {
+    display: flex;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+}
+
+.Restaurant-places-img {
+    width: 50%;
+    height: 300px;
+}
+
+.Restaurant-places-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Restaurant-places-img-text {
+    width: 50%;
+    padding: 20px 0 0 50px;
+}
+
+.Restaurant-places-img-text h2 {
+    font-family: var(--subtext);
+    font-weight: normal;
+    color: var(--main-color);
+}
+
+.Restaurant-places-img-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--subtext);
+}
+
+/*---------------lien-he------------*/
+.form-container input[type=text],
+.form-container input[type=tel] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=tel]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.open-button {
+    background-color: #35ffeb;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 200px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.form-container .btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover {
+    background-color: #08ffde;
+}
+
+.open-button:hover {
+    opacity: 1;
+    background-color: tomato;
+}
+
+.form-container.btn .cancel :hover {
+    background-color: #41ffe6;
+}
+
+a.b {
+    display: flex;
+    color: black;
+    font-size: 25px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+}
+
+
+.fab {
+    font-size: 50px;
+    color: #3b5998;
+}
+
+.fab:hover {
+    color: #1877f2;
+    transition: all 0.3s ease;
+}
+
+.instagram-icon {
+    left: 50px;
+    font-size: 50px;
+    color: #dd469c;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.instagram-icon:hover {
+    color: #833ab4;
+}
+
+.icon-container {
+    display: inline-block;
+    margin-right: 30px;
+    /* Để tạo khoảng cách giữa icon và tên */
+}
+
+.icon-container a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Đảm bảo dọc phần tử theo trục chính */
+}
+
+.icon-container i {
+    padding-right: 5px;
+}
+
+#span1 {
+    bottom: 36px;
+    color: #3b69ff;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    right: 180px;
+
+}
+
+#span2 {
+    bottom: 36px;
+    color: #fc1bad;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    right: 94px;
+}
+
+#span3 {
+    position: relative;
+    left: 33px;
+    font-size: 17px;
+    color: lightgreen;
+}
+
+#dienthoai {
+    position: relative;
+    font-size: 30px;
+    left: 10px;
+    color: rgb(50, 247, 56);
+}
+
+#sua {
+    position: relative;
+    font-size: 20px;
+    left: 140px;
+    bottom: 24px;
+    color: #ff7ff9;
+}
